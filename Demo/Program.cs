@@ -17,7 +17,10 @@ namespace Demo
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
+            Host.CreateDefaultBuilder(args).ConfigureLogging(loggingBuilder =>
+                {
+                    loggingBuilder.AddLog4Net();//需要配置文件
+                })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
