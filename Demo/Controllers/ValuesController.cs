@@ -39,7 +39,7 @@ namespace Demo.Controllers
             }
             
 
-            return "出来了+再来一次+测试";
+            return "出来了+GetError";
         }
     }
 }
