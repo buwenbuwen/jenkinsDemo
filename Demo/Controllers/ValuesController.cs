@@ -32,6 +32,7 @@ namespace Demo.Controllers
             try
             {
                 string s = null;
+                s.ToString();
             }
             catch(Exception ex)
             {
